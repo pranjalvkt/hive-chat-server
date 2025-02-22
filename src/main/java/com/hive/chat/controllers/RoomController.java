@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/rooms")
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin("https://chatinhive.netlify.app")
 public class RoomController {
     private RoomRepository roomRepository;
 
