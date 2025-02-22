@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestBody;
 
 @Controller
-@CrossOrigin(origins = {"https://chatinhive.netlify.app", "http://localhost:3000"})
+@CrossOrigin(origins = {"https://chatinhive.netlify.app", "http://localhost:3000", "http://localhost:4000"})
 public class ChatController {
     private RoomRepository roomRepository;
 
