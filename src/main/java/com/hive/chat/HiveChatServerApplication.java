@@ -7,7 +7,7 @@ import io.github.cdimascio.dotenv.Dotenv;
 @SpringBootApplication
 public class HiveChatServerApplication {
 	static {
-		Dotenv dotenv = Dotenv.load();
+		Dotenv dotenv = Dotenv.configure().ignoreIfMissing().load();
 		String mongoUri = dotenv.get("MONGODB_URI");
 		System.setProperty("MONGODB_URI", mongoUri);
 	}
