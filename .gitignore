@@ -53,5 +53,5 @@ Thumbs.db
 *.swp
 
 # Environment variables file (if you store sensitive info locally)
-.env
+src/main/resources/.env
 
