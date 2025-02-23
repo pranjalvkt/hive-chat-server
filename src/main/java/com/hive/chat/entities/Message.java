@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.time.Instant;
 import java.time.LocalDateTime;
 
 @Getter
@@ -14,11 +15,11 @@ import java.time.LocalDateTime;
 public class Message {
     private String sender;
     private String content;
-    private LocalDateTime timeStamp;
+    private Instant timeStamp;
 
     public Message(String content, String sender) {
         this.content = content;
         this.sender = sender;
-        this.timeStamp = LocalDateTime.now();
+        this.timeStamp = Instant.now();
     }
 }
