@@ -17,6 +17,6 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
-        registry.addEndpoint("/chat").setAllowedOrigins("https://chatinhive.netlify.app", "http://localhost:3000", "http://localhost:4000").withSockJS();
+        registry.addEndpoint("/chat").setAllowedOrigins("https://chatinhive.netlify.app", "https://connectinhive.netlify.app", "http://localhost:3000", "http://localhost:4000").withSockJS();
     }
 }
