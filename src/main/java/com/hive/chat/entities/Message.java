@@ -22,4 +22,16 @@ public class Message {
         this.sender = sender;
         this.timeStamp = Instant.now();
     }
+
+    public String getContent() {
+        return content;
+    }
+
+    public Instant getTimeStamp() {
+        return timeStamp;
+    }
+
+    public String getSender() {
+        return sender;
+    }
 }
